@@ -50,7 +50,7 @@ li{
  display: inline-block;
  position: absolute;
  left: 36%;
- top: 5%;
+ top: 3%;
 line-height: 20px;
 font-size: 26px;
 }
@@ -69,15 +69,19 @@ font-size: 26px;
   height: 800px;
   position: absolute;
   left: 45%;
-  bottom: 66%;
+  bottom: 70%;
   object-fit: contain;
 }
 .logo2 img{
   position: absolute;
-    left:-24%;
-    bottom: -15%;
+    left:-28%;
+    bottom: -10%;
 }
-
+.logo3{
+    position: absolute;
+   right: -30%;
+    bottom:-16% ;
+}
 /* style about */
 
 .about{
@@ -105,7 +109,8 @@ line-height: 14px;
 .language h2,
 .Expertise h2,
 .Experience h2,
-.Education h2{
+.Education h2,
+.Skills_Summary h2{
     background:var(--black--color);
     display: inline-block;
     padding: 13px 80px;
@@ -115,7 +120,7 @@ line-height: 14px;
 .Experience h2,
 .Education h2{
     margin: 0;
-    padding: 6px 80px;
+    padding: 4px 80px;
 
 }
 
@@ -146,4 +151,81 @@ line-height: 14px;
 }
 .Education .item{
     line-height: 0;
+}
+.Skills_Summary h2{
+padding: 4px ;
+width: 100%;
+margin: 0;
+text-align: center;
+}
+.Skills{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 13px;
+position: relative;
+
+}
+.pxles .html,
+.pxles .css,
+.pxles .js{
+    height: 8.4px;
+    width: 100px;
+    border-radius: 5px;
+    border: 2px solid var(--black--color);
+
+}
+.pxles .html:after{
+    position: absolute;
+    content:"";
+    height: 5px;
+    width: 27%;
+    border-radius: 5px;
+    background:var(--black--color);
+    border: 1px solid var(--black--color);
+
+}
+.pxles .css:after{
+    position: absolute;
+    content:"";
+    height: 5px;
+    width: 20%;
+    border-radius: 5px;
+    background:var(--black--color);
+    border: 1px solid var(--black--color);
+
+}
+
+.pxles .js:after{
+    position: absolute;
+    content:"";
+    height: 5px;
+    width: 10%;
+    border-radius: 5px;
+    background:var(--black--color);
+    border: 1px solid var(--black--color);
+
+
+
+}
+.pxles .html:before{
+    position: absolute;
+    content:"89%";
+font-size: 10px;
+right: 0;
+
+}
+.pxles .css::before{
+    position: absolute;
+    content:"60%";
+font-size: 10px;
+   right: 0;
+    
+}
+
+.pxles .js:before{
+    position: absolute;
+    content:"40%";
+font-size: 10px;
+   right: 0;
 }
