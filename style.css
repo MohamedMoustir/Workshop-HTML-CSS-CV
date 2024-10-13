@@ -3,7 +3,7 @@
 
 body{
     font-family: "Kanit", sans-serif;
-
+color: var(--black--color);
 }
 *{
      box-sizing: border-box;
@@ -19,12 +19,16 @@ z-index: -1;
 #continer{
     margin: 30px auto;
     width: 50%;
-    height: 140vh;
+    height: 180vh;
     background: var(--color--white);
     border: 1px solid;
     position: relative;
     overflow: hidden;
 
+}
+p,
+li{
+    color: #27384cd9;
 }
 .size{
     display: inline-block;
@@ -38,7 +42,7 @@ z-index: -1;
     border-radius: 100%;
     outline:8px solid var(--color--white);
     position: absolute;
-    top: 4%;
+    top: 3%;
     left: 4%;
     border: 4px solid var(--black--color);
 }
@@ -65,21 +69,26 @@ font-size: 26px;
   height: 800px;
   position: absolute;
   left: 45%;
-  bottom: 58%;
+  bottom: 66%;
   object-fit: contain;
+}
+.logo2 img{
+  position: absolute;
+    left:-24%;
+    bottom: -15%;
 }
 
 /* style about */
 
 .about{
     display: inline-block;
-    width: 40%;
+    width: 60%;
     text-align: center;
-    margin:60px  15px 0;
+    margin:50px  50px 0;
 }
 .icon{
     margin-bottom: 45px;
-line-height: 17px;
+line-height: 14px;
 }
 .house,.phone,.email{
     display: flex;
@@ -93,10 +102,48 @@ line-height: 17px;
     border-radius: 50%;
     margin-right: 12px;
 }
-.language h2{
+.language h2,
+.Expertise h2,
+.Experience h2,
+.Education h2{
     background:var(--black--color);
     display: inline-block;
-    padding: 20px 80px;
+    padding: 13px 80px;
     margin: 0 20px;
     color: white;
+}
+.Experience h2,
+.Education h2{
+    margin: 0;
+    padding: 6px 80px;
+
+}
+
+.language li ,
+.Expertise li{
+    line-height: 27px;
+    margin-left: 30px;
+}
+.contine-right{
+  background: red;
+}
+.continer-text{
+    display: flex;
+}
+.contine-righ{
+    width: 50%;
+    margin: 60px;
+    display: inline-block;
+}
+.contine-righ .item{
+    line-height: 4px;
+}
+.contine-righ .item p{
+    line-height: 19px;
+}
+.contine-righ .item h4{
+    font-size: 15px;
+}
+.Education .item{
+    line-height: 0;
 }
