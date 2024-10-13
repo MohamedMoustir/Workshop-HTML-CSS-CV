@@ -1,0 +1,102 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: "Kanit", sans-serif;
+
+}
+*{
+     box-sizing: border-box;
+}
+header{
+z-index: -1;
+
+}
+:root{
+    --black--color:#27384c;
+    --color--white:#ffffff
+}
+#continer{
+    margin: 30px auto;
+    width: 50%;
+    height: 140vh;
+    background: var(--color--white);
+    border: 1px solid;
+    position: relative;
+    overflow: hidden;
+
+}
+.size{
+    display: inline-block;
+ width: 23%;
+ height: 28vh;
+ background-color: var(--black--color);
+}
+.head img{
+    width: 230px;
+    height: 230px;
+    border-radius: 100%;
+    outline:8px solid var(--color--white);
+    position: absolute;
+    top: 4%;
+    left: 4%;
+    border: 4px solid var(--black--color);
+}
+.name{
+ display: inline-block;
+ position: absolute;
+ left: 36%;
+ top: 5%;
+line-height: 20px;
+font-size: 26px;
+}
+.name :last-child{
+    margin-left: 106px;
+    margin-top:-12px;
+     color: #0c0b0b81;
+    font-size: 18px;
+
+}
+.lastName{
+    margin-left: 45px;
+}
+.logo img{
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  left: 45%;
+  bottom: 58%;
+  object-fit: contain;
+}
+
+/* style about */
+
+.about{
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    margin:60px  15px 0;
+}
+.icon{
+    margin-bottom: 45px;
+line-height: 17px;
+}
+.house,.phone,.email{
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+.house i,.phone i,.email i{
+    background-color:#27384c ;
+    padding:8px;
+    color: white;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+.language h2{
+    background:var(--black--color);
+    display: inline-block;
+    padding: 20px 80px;
+    margin: 0 20px;
+    color: white;
+}
